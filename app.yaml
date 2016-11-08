@@ -15,7 +15,6 @@ libraries:
 
 skip_files:
 - ^(.*/)?.*\.py[co]$ # skip compiled .pyc/.pyo files
+- ^(.*/)?\..*$ # skip .git, .gitignore, any_folder/.DS_Store...
 - ^README\..*
-- \.gitignore
-- ^\.git/.*
 - ^LICENSE

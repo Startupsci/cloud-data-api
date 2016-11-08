@@ -10,7 +10,7 @@ class CloudDataApi(remote.Service):
     """Cloud Data API v1."""
 
     @endpoints.method(message_types.VoidMessage, AboutMessage,
-      path = "about", http_method='GET', name = "about")
+                      path = "about", http_method='GET', name = "about")
     def about(self, request):
       return AboutMessage(about="Cloud Data API v1")
 
